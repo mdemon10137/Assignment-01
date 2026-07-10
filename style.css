@@ -101,15 +101,13 @@ nav ul li a{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 20px 30px;
-   
 }
 .card{
    
      border-radius: 20px;
      text-align: left;
      margin-top: 10px;
-
-
+     background-color: #f7f5f5;
 }
  .card .txt{
     padding: 0px 10px;
@@ -137,19 +135,52 @@ nav ul li a{
      flex-direction: column;
      gap: 10px;
      background-color: #f7f5f5;
+     border-radius: 10px;    
+}
+.price-card1{
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     background-color: #0D1B2A;
      border-radius: 10px;
      padding: 10px;
 }
+.price-card1 .price-card-info {
+ color: #f7f5f5;
+ padding: 0px 10px;
+ margin: 10px;
+}
+.price-card1 .price-card-feature{
+ color: #d6c7c7;
+}
 .price-card-info , .price-card-feature{
     text-align: left;
+    padding: 0px 10px;
+    margin: 10px;
 }
 .price-card-feature{
   padding: 0px 20px ;   
 }
 .price-card-feature li::marker {
-   color: #1D4ED8;
+   color: #60A5FA;
 }
-.price-card-btn{
-    margin: 10px;
-    
+.price-card-btn .common-btn{
+    margin-bottom: 10px;
+    width: 350px;
+    height: 60px;
+    background-color: white;
+    color: #2563EB;
+    border: 1px solid #2563EB;
+
 }
+.price-card-btn1 .common-btn{
+    margin-bottom: 10px;
+    width: 350px;
+    height: 60px;
+    background-color: #2563EB; 
+}
+
+/* footer Section */
+
+
+

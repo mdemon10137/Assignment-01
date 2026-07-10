@@ -3,6 +3,9 @@
     margin: 0px;
 }
 
+img{
+    max-width: 100%;
+}
 /* Nav Bar CSS */
 
 /* header{ */
@@ -34,7 +37,7 @@ nav ul li a{
    
 }
 /* common button */
-#common-btn{
+.common-btn{
     background-color:#1D4ED8 ;
     border-radius: 10px;
     width: 150px;
@@ -45,6 +48,42 @@ nav ul li a{
     cursor: pointer;
 }
 
+/* Banner Section */
 
+.banner-parent{
+    background-image: url(./image/banner.jpg), linear-gradient(to right,#000102,#000102);
+    
+    border: 1px solid;
+height: 700px;
+width: 100%;
+background-size: cover;
+background-repeat: no-repeat; 
+}
 
+.banner-text{
+    margin-top:200px ;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    color: white;  
+}
 
+.banner-text h2{
+    font-size: 50px;
+}
+.banner-text p{
+    font-size: 30px;
+}
+.banner-button-bottom{
+    display: flex;
+    justify-content:center;
+    align-items:flex-end;
+    margin-top: 200px;
+    
+}
+.hero-btn{
+    font-size: 20px;
+    padding: 10px;
+}

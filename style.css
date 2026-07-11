@@ -79,7 +79,7 @@ nav ul li a{
     margin-bottom: 150px;
 }
 .banner-text button{
-     margin-left: 45%;
+    margin-left: 42%;
     width: 15%;
     font-size: 20px;
     padding: 10px;
@@ -194,4 +194,266 @@ height: 100px;
 footer p{
     padding: 8px 0px;
 }
+
+
+/* =====================================================
+   Final Call to Action Section
+   (New section only — scoped entirely to .final-cta-*
+   classes so nothing above is affected)
+   ===================================================== */
+
+
+.final-cta-parent{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 60px 0px;
+    padding: 90px 0px 80px;
+    background: radial-gradient(circle at 15% 20%, rgba(37,99,235,0.35), transparent 45%),
+                radial-gradient(circle at 85% 85%, rgba(96,165,250,0.25), transparent 40%),
+                linear-gradient(135deg, #0D1B2A 0%, #10233A 55%, #0D1B2A 100%);
+    border-radius: 8px;
+}
+
+
+.final-cta-parent::before,
+.final-cta-parent::after{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(60px);
+    pointer-events: none;
+}
+
+
+.final-cta-parent::before{
+    width: 320px;
+    height: 320px;
+    background: rgba(37,99,235,0.35);
+    top: -120px;
+    left: -100px;
+}
+
+
+.final-cta-parent::after{
+    width: 260px;
+    height: 260px;
+    background: rgba(96,165,250,0.25);
+    bottom: -100px;
+    right: -80px;
+}
+
+
+.final-cta-inner{
+    position: relative;
+    z-index: 1;
+}
+
+
+/* What's Included: facilities / services showcase */
+
+
+.final-cta-included{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+.final-cta-eyebrow{
+    display: inline-block;
+    color: #93C5FD;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 34px;
+}
+
+
+.final-cta-facilities{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px 24px;
+}
+
+
+.final-cta-facility{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    text-align: left;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 10px;
+    padding: 14px 18px;
+}
+
+
+.final-cta-facility-icon{
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(37,99,235,0.18);
+    border: 1px solid rgba(96,165,250,0.45);
+    color: #60A5FA;
+    font-size: 17px;
+}
+
+
+.final-cta-facility p{
+    color: #E5E9F0;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.35;
+}
+
+
+.final-cta-divider{
+    height: 1px;
+    max-width: 720px;
+    margin: 0 auto 50px;
+    background: linear-gradient(to right, transparent, rgba(255,255,255,0.18), transparent);
+}
+
+
+/* Headline + supporting content */
+
+
+.final-cta-content{
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+}
+
+
+.final-cta-badge{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 16px;
+    border: 1px solid rgba(96,165,250,0.5);
+    border-radius: 30px;
+    color: #93C5FD;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    background: rgba(37,99,235,0.12);
+}
+
+
+.final-cta-heading{
+    color: #ffffff;
+    font-size: 44px;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+
+.final-cta-text{
+    color: #B8C2D1;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+.final-cta-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+
+.final-cta-btn-primary{
+    background-color: #2563EB;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 16px 34px;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(37,99,235,0.45);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+
+.final-cta-btn-primary:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 14px 34px rgba(37,99,235,0.55);
+}
+
+
+.final-cta-btn-secondary{
+    background-color: transparent;
+    color: #E5E9F0;
+    border: 1px solid rgba(229,233,240,0.4);
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 16px 30px;
+    cursor: pointer;
+    transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+
+.final-cta-btn-secondary:hover{
+    border-color: #60A5FA;
+    color: #60A5FA;
+}
+
+
+.final-cta-microcopy{
+    color: #7C8AA0;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+
+.final-cta-microcopy i{
+    color: #60A5FA;
+    margin-right: 4px;
+}
+
+
+@media (max-width: 900px){
+    .final-cta-facilities{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .final-cta-heading{
+        font-size: 34px;
+    }
+}
+
+
+@media (max-width: 560px){
+    .final-cta-facilities{
+        grid-template-columns: 1fr;
+    }
+    .final-cta-buttons{
+        flex-direction: column;
+        width: 100%;
+    }
+    .final-cta-btn-primary,
+    .final-cta-btn-secondary{
+        width: 100%;
+    }
+    .final-cta-microcopy{
+        text-align: center;
+    }
+}
+
+
+
 

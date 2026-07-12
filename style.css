@@ -1,6 +1,7 @@
 *{
     padding: 0px;
     margin: 0px;
+    font-family: "Inter", sans-serif;
 }
 
 img{
@@ -181,18 +182,26 @@ nav ul li a{
 /* footer Section */
 
 footer{
-display: grid;
-grid-template-columns: repeat(3,1fr);
-align-content:center;
-text-align: center;
-gap: 0px 250px;
 background-color: #0D1B2A;
 border-radius: 8px;
 color: #f7f5f5;
-height: 100px;
+text-align: center;
+padding: 20px 0px;
 }
-footer p{
-    padding: 8px 0px;
+
+.footer-parent{
+ display: flex ;
+ justify-content: space-between;
+ align-content:center;
+ padding: 0px 40px;
+   
+}
+.footer-right{
+    cursor: pointer;
+    margin-top: 10px;
+}
+footer hr{
+    margin: 14px 0;
 }
 
 
@@ -213,6 +222,7 @@ footer p{
                 radial-gradient(circle at 85% 85%, rgba(96,165,250,0.25), transparent 40%),
                 linear-gradient(135deg, #0D1B2A 0%, #10233A 55%, #0D1B2A 100%);
     border-radius: 8px;
+    
 }
 
 
